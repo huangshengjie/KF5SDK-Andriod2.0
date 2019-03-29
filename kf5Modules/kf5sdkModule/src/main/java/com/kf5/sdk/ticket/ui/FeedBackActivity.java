@@ -36,6 +36,9 @@ import com.kf5.sdk.ticket.mvp.usecase.TicketUseCaseManager;
 import com.kf5.sdk.ticket.mvp.view.ITicketFeedBackView;
 import com.kf5.sdk.ticket.receiver.TicketReceiver;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -116,9 +119,11 @@ public class FeedBackActivity extends BaseActivity<TicketFeedBackPresenter, ITic
 
     @Override
     public Map<String, String> getDataMap() {
-        Map<String, String> map = new ArrayMap<>();
+        ArrayMap<String, String> map = new ArrayMap<>();
         map.put(ParamsKey.TITLE, SPUtils.getTicketTitle());
         map.put(ParamsKey.CONTENT, mETContent.getText().toString());
+        map.put("priority","medium");
+        map.put("group_id","medium");
 
         try {
 //            JSONArray jsonArray = new JSONArray();

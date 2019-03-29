@@ -130,7 +130,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 map.put(ParamsKey.EMAIL, etEmail.getText().toString());
                 map.put(ParamsKey.PHONE, "18940980522");
                 map.put(ParamsKey.NAME, etName.getText().toString());
-                map.put(ParamsKey.ORGANIZATION_ID, "广州图匠数据科技有限公司");
 
                 SPUtils.saveAppID(etAppid.getText().toString());
                 SPUtils.saveHelpAddress(etAddress.getText().toString());
