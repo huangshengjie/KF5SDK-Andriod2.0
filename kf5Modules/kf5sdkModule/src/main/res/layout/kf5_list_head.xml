@@ -9,7 +9,6 @@
     <!-- 内容 -->
 
     <RelativeLayout
-        android:id="@+id/kf5_head_contentLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"

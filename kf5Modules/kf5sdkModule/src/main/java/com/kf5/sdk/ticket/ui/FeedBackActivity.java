@@ -119,19 +119,37 @@ public class FeedBackActivity extends BaseActivity<TicketFeedBackPresenter, ITic
 
     @Override
     public Map<String, String> getDataMap() {
-        ArrayMap<String, String> map = new ArrayMap<>();
-        map.put(ParamsKey.TITLE, SPUtils.getTicketTitle());
-        map.put(ParamsKey.CONTENT, mETContent.getText().toString());
-        map.put("priority","medium");
-        map.put("group_id","medium");
+//        String title = getIntent().getStringExtra("title");
+//        String content = getIntent().getStringExtra("content");
+//        String category = getIntent().getStringExtra("category");
+//        String phone = getIntent().getStringExtra("phone");
+//        String project = getIntent().getStringExtra("project");
 
+        ArrayMap<String, String> map = new ArrayMap<>();
+        map.put("title", "Android_关于拍照功能_18940980522");
+        map.put("content", mETContent.getText().toString());
+        //map.put("priority", "high"); //可选值："low", "medium", "high", "urgent"
+
+        //用户自定义字段
         try {
-//            JSONArray jsonArray = new JSONArray();
-//            JSONObject jsonObject2 = new JSONObject();
-//            jsonObject2.put(ParamsKey.NAME, "field_11175");
-//            jsonObject2.put(ParamsKey.VALUE, "这里是测试字段");
-//            jsonArray.put(jsonObject2);
-//            map.put(ParamsKey.CUSTOM_FIELDS, jsonArray.toString());
+            JSONArray jsonArray = new JSONArray();
+
+            JSONObject field_1012285 = new JSONObject();
+            field_1012285.put(ParamsKey.NAME, "field_1012285");//问题分类
+            field_1012285.put(ParamsKey.VALUE, "关于拍照功能");
+            jsonArray.put(field_1012285);
+
+            JSONObject field_1012286 = new JSONObject();
+            field_1012286.put(ParamsKey.NAME, "field_1012286");//手机号
+            field_1012286.put(ParamsKey.VALUE, "18940980522");
+            jsonArray.put(field_1012286);
+
+            JSONObject field_1012239 = new JSONObject();
+            field_1012239.put(ParamsKey.NAME, "field_1012239");//项目名称
+            field_1012239.put(ParamsKey.VALUE, "黑人");
+            jsonArray.put(field_1012239);
+
+            map.put(ParamsKey.CUSTOM_FIELDS, jsonArray.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }

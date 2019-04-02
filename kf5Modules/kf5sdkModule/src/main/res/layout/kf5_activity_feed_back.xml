@@ -45,20 +45,35 @@
             android:textSize="@dimen/kf5_text_xxh_size" />
     </RelativeLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请描述您遇到的问题"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="16dp"/>
 
     <EditText
         android:id="@+id/kf5_feed_back_content_et"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/white"
+        android:layout_height="240dp"
+        android:background="@drawable/kf5_feedback"
         android:focusable="false"
         android:gravity="top|start"
         android:hint="@string/kf5_edittext_hint"
-        android:padding="@dimen/kf5_dimen_16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp"
         android:textColor="@color/kf5_et_content_text_color"
         android:textColorHint="@color/kf5_et_hint_text_color"
-        android:textSize="@dimen/kf5_text_size_18" />
+        android:textSize="@dimen/kf5_text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:id="@+id/bottom_layout"

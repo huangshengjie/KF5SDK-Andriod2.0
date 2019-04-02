@@ -1,85 +1,78 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white"
-                tools:context="${relativePackage}.${activityClass}" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:showDividers="middle">
 
-    <LinearLayout
-        android:id="@+id/bottom_layout"
+    <TextView
+        android:id="@+id/tvHelpCenter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical" >
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_bg"
+        android:drawableEnd="@drawable/kf5_jump_icon"
+        android:drawableLeft="@mipmap/look_help_center"
+        android:drawablePadding="@dimen/kf5_dimen_12dp"
+        android:drawableRight="@drawable/kf5_jump_icon"
+        android:drawableStart="@mipmap/look_help_center"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="@string/help_center"
+        android:textColor="@color/person_info_title_color"
+        android:textSize="20sp"/>
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="@color/kf5_table_deliver" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/kf5_table_deliver"
-            android:orientation="horizontal" >
-
-            <LinearLayout
-                android:id="@+id/home_layout"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <ImageView
-                    android:id="@+id/main_home_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@null"
-                    android:src="@mipmap/home_home_img_light" />
-
-                <TextView
-                    android:id="@+id/main_home_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="首页"
-                    android:textColor="@color/bottom_text_selected_bg"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/setting_layout"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <ImageView
-                    android:id="@+id/main_setting_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@null"
-                    android:src="@mipmap/home_setting" />
-
-                <TextView
-                    android:id="@+id/main_setting_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="设置"
-                    android:textColor="@color/person_info_title_color"
-                    android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/home_replace_layout"
+    <TextView
+        android:id="@+id/tvFeedBack"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_layout" >
-    </FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_bg"
+        android:drawableEnd="@drawable/kf5_jump_icon"
+        android:drawableLeft="@mipmap/more_problems_feedback"
+        android:drawablePadding="@dimen/kf5_dimen_12dp"
+        android:drawableRight="@drawable/kf5_jump_icon"
+        android:drawableStart="@mipmap/more_problems_feedback"
+        android:gravity="center_vertical"
+        android:padding="@dimen/kf5_dimen_12dp"
+        android:text="@string/feed_back"
+        android:textColor="@color/person_info_title_color"
+        android:textSize="20sp"/>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvLookFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_bg"
+        android:drawableEnd="@drawable/kf5_jump_icon"
+        android:drawableLeft="@mipmap/look_feed_back"
+        android:drawablePadding="@dimen/kf5_dimen_12dp"
+        android:drawableRight="@drawable/kf5_jump_icon"
+        android:drawableStart="@mipmap/look_feed_back"
+        android:gravity="center_vertical"
+        android:padding="@dimen/kf5_dimen_12dp"
+        android:text="@string/look_feed_back"
+        android:textColor="@color/person_info_title_color"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tvIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_bg"
+        android:drawableEnd="@drawable/kf5_jump_icon"
+        android:drawableLeft="@mipmap/demo_chat"
+        android:drawablePadding="@dimen/kf5_dimen_12dp"
+        android:drawableRight="@drawable/kf5_jump_icon"
+        android:drawableStart="@mipmap/demo_chat"
+        android:gravity="center_vertical"
+        android:padding="@dimen/kf5_dimen_12dp"
+        android:text="@string/chat"
+        android:textColor="@color/person_info_title_color"
+        android:textSize="20sp"/>
+
+</LinearLayout>

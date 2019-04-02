@@ -32,7 +32,6 @@
     <!-- help_center -->
     <string name="kf5_contact_us">Contact us</string>
     <string name="kf5_category_list">Category list</string>
-    <string name="kf5_section_list">Section list</string>
     <string name="kf5_search">Search</string>
     <string name="kf5_search_hint">Please input search criteria</string>
     <string name="kf5_article_category">Article category</string>
@@ -90,11 +89,6 @@
     </string-array>
 
     <!--权限相关-->
-    <string name="kf5_media_access_hint">Grant access to the photos/media and files on your device
-    </string>
-    <string name="kf5_access_recording">Record voice</string>
-    <string name="kf5_access_call">Make voice call</string>
-    <string name="kf5_access_camera">Take photos and record videos</string>
 
     <!-- IM 相关-->
     <string name="kf5_ai_to_agent">Agent</string>
@@ -102,13 +96,9 @@
     <string name="kf5_queue_waiting">Queue waiting...</string>
     <string name="kf5_update_queue_num">You are in the %1$d place of the queue</string>
     <string name="kf5_no_agent_online">No agent online</string>
-    <string name="kf5_chat_ended">Chat is ended</string>
-    <string name="kf5_cancel_queue_successfully">Queueing cancelled successfully</string>
     <string name="kf5_cancel_queue_failed">Queueing cancelled failed</string>
     <string name="kf5_no_agent_online_leaving_message">No agent currently online,leave a message
         instead
-    </string>
-    <string name="kf5_agent_handle_later_hint">An agent will handle your feedback request soon
     </string>
 
     <string-array name="kf5_ticket_status">
@@ -152,12 +142,9 @@
     <string name="kf5_delete_file_hint">Delete the file?</string>
     <string name="kf5_delete">Delete</string>
     <string name="kf5_input_some_text">Please enter your question</string>
-    <string name="kf5_satisfied">Satisfied</string>
-    <string name="kf5_unsatisfied">Unsatisfied</string>
     <string name="kf5_reminder">Reminder</string>
     <string name="kf5_unknown_error">unknown error</string>
     <string name="kf5_invite_video_chat">The agent invite you into the video conferencing</string>
-    <string name="kf5_robot_found_answers">has found following answers for you:</string>
     <string name="kf5_update_queue">Queueing to be served;</string>
     <string name="kf5_chat">Chat</string>
     <string name="kf5_not_in_service_time">Not in the service time,leave a message instead</string>
